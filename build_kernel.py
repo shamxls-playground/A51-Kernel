@@ -24,6 +24,12 @@ def popen_impl(command: list[str]):
         with open(stderr_log, "w") as f:
             f.write(err)
         print(f"Output log files: {stdout_log}, {stderr_log}")
+        print ("=====DEBUG=====")
+        print (out)
+        print ("=====DEBUG=====")
+        print (err)
+        print ("=====DEBUG=====")
+            
         
     if s.returncode != 0:
         if debug_popen_impl:
